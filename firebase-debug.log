@@ -37,3 +37,24 @@ You're about to initialize a Firebase project in this directory:
 [info] will contain Hosting assets to be uploaded with firebase deploy. If you
 [info] have a build process for your assets, use your build's output directory.
 [info] 
+[debug] [2023-11-19T10:36:01.240Z] ----------------------------------------------------------------------
+[debug] [2023-11-19T10:36:01.242Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\42191\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-19T10:36:01.242Z] CLI Version:   12.8.1
+[debug] [2023-11-19T10:36:01.243Z] Platform:      win32
+[debug] [2023-11-19T10:36:01.243Z] Node Version:  v20.9.0
+[debug] [2023-11-19T10:36:01.243Z] Time:          Sun Nov 19 2023 11:36:01 GMT+0100 (Central European Standard Time)
+[debug] [2023-11-19T10:36:01.243Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-19T10:36:01.249Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-19T10:36:01.249Z] > authorizing via signed-in user (ashianashi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\42191\Desktop\denniky
+

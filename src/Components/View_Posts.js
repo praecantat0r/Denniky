@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { QuerySnapshot, collection, getDoc, getDocs, onSnapshot } from "firebase/firestore";
+import { QuerySnapshot, collection, getDoc, getDocs, onSnapshot, query, orderBy } from "firebase/firestore";
 import { db } from "../firebase";
 import Footer from "./Footer"
 import Post from './Post_preview'
@@ -17,7 +17,9 @@ function Create_Post() {
         if (user) {
           setUserUid(user.uid);
           const getPosts = [];
-          const Posts = await getDocs(collection(db, user.uid))
+          const tripCollection = collection(db, user.uid);
+          const tripQuery = query(tripCollection, orderBy('Date', 'asc')); 
+          const Posts = await getDocs(tripQuery)
           .then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
               getPosts.push({
@@ -55,7 +57,7 @@ function Create_Post() {
             <div className="bg-[url('/Assets/main-small-bg.png')] flex h-screen items-center justify-center bg-cover 2xl:bg-[url('/Assets/background.png')] md:bg-[url('/Assets/md-screen-bg.png')]">
                 <div className="absolute h-[95vh] top-0 w-screen flex flex-col flex-nowrap overflow-auto">
                   {trips.map(function(item, id){ 
-                    return <Post key={id} Title={item.Title} Description={item.Description} Icon={item.Icon}></Post>})}
+                    return <Post key={id} Title={item.Title} Description={item.Description} Icon={item.Icon} Date={item.Date}></Post>})}
                 </div>
             </div>
         </div>

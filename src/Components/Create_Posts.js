@@ -3,6 +3,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { useNavigate } from "react-router";
+import {getCurrentDate} from './GetDate';
 
 function Create_Posts() {
     const navigate = useNavigate();
@@ -10,6 +11,7 @@ function Create_Posts() {
     const [decs, setDecs] = useState(""); 
     const [warning, SetWarning] = useState("");
     const [icon, SetIcon] = useState("");
+    const getDate = getCurrentDate();
     const auth = getAuth();
     const HandleSubmitt = async (e) => {
         e.preventDefault();
@@ -21,7 +23,8 @@ function Create_Posts() {
                 setDoc(doc(db, uid, title), {
                     Title: title,
                     Description: decs,
-                    Icon: icon
+                    Icon: icon,
+                    Date: getDate,
                 });
                 navigate('/main')
                 }

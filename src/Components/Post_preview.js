@@ -5,8 +5,9 @@ function Post(props) {
             <div className="w-full h-full flex justify-center items-center"><p className="text-6xl">{props.Icon}</p></div>
         </div>
         <div className="flex flex-col w-full">
-        <div className="w-full">
-            <div className="w-full h-6 border-b-2 border-black"><p className="mx-1 font-dotgothic">{props.Title}</p></div>
+        <div className="w-full flex flex-row">
+            <div className="basis-3/4 h-6 border-b-2 border-black"><p className="mx-1 font-dotgothic">{props.Title}</p></div>
+            <div className="basis-1/4 h-6 border-b-2 border-black"><p className="mx-1 font-dotgothic text-sm">{props.Date}</p></div>
         </div>
         <div className="w-full h-full">
             <div className="w-full h-full"> <p className="text-gray-600 ml-2">{props.Description}</p></div>
