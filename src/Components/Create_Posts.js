@@ -42,7 +42,7 @@ function Create_Posts() {
         <div>
         <body>
         <div>
-            <div className="bg-[url('/Assets/main-small-bg.png')] flex h-screen items-center justify-center bg-cover 2xl:bg-[url('/Assets/background.png')] md:bg-[url('/Assets/md-screen-bg.png')]">
+            <div className="bg-[url('/Assets/main-small-bg.png')] flex h-screen items-center justify-center bg-cover overflow-hidden 2xl:bg-[url('/Assets/background.png')] md:bg-[url('/Assets/md-screen-bg.png')]">
                 <div className="m-3 flex justify-center items-center w-screen h-[80vh] bg-white border-4 border-black  rounded-lg">
                 <form action="" className="h-full w-full flex flex-col p-10 rounded-md">
                     <label >

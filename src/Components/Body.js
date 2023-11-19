@@ -14,7 +14,7 @@ function Body() {
     return (
     <body>
         <div>
-            <div className="bg-[url('/Assets/main-small-bg.png')] flex h-screen items-center justify-center bg-cover 2xl:bg-[url('/Assets/background.png')] md:bg-[url('/Assets/md-screen-bg.png')]">
+            <div className="bg-[url('/Assets/main-small-bg.png')] flex h-screen items-center justify-center bg-cover overflow-hidden 2xl:bg-[url('/Assets/background.png')] md:bg-[url('/Assets/md-screen-bg.png')]">
                 <div className="">
                     <form action="" className="flex flex-col justify-center items-center p-10 rounded-md">
                         <span className="flex items-center justify-center h-10 w-40 font-bold text-gray-600 text-2xl" >Hello!</span>

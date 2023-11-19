@@ -32,7 +32,7 @@ function Login() {
     }
     return (
         <div>
-            <div className="bg-[url('/Assets/small-screen-bg.png')] flex h-screen items-center justify-center bg-cover 2xl:bg-[url('/Assets/background.png')] md:bg-[url('/Assets/md-screen-bg.png')]">
+            <div className="bg-[url('/Assets/small-screen-bg.png')] flex h-screen items-center justify-center overflow-hidden bg-cover 2xl:bg-[url('/Assets/background.png')] md:bg-[url('/Assets/md-screen-bg.png')]">
                 <div className="">
                     <form action="" className="flex flex-col p-10 rounded-md">
                         <input type="text" placeholder="Email" className="text-gray-600 font-bold border m-1 text-center rounded-md placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" value={email} onChange={e => SetEmail(e.target.value)}/>
