@@ -25,7 +25,7 @@ function Login() {
         }
     }
     return (
-        <div>
+        <div className="h-screen">
             <div className="bg-[url('/Assets/small-screen-bg.png')] flex h-screen items-center justify-center overflow-hidden bg-cover 2xl:bg-[url('/Assets/background.png')] md:bg-[url('/Assets/md-screen-bg.png')]">
                 <div className="">
                     <form action="" className="flex flex-col p-10 rounded-md">

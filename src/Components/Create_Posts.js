@@ -4,6 +4,8 @@ import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { useNavigate } from "react-router";
 import {getCurrentDate} from './GetDate';
+import { TfiAngleLeft } from "react-icons/tfi";
+import Footer from './Footer'
 
 function Create_Posts() {
     const navigate = useNavigate();
@@ -43,7 +45,7 @@ function Create_Posts() {
         <body>
         <div>
             <div className="bg-[url('/Assets/main-small-bg.png')] flex h-screen items-center justify-center bg-cover overflow-hidden 2xl:bg-[url('/Assets/background.png')] md:bg-[url('/Assets/md-screen-bg.png')]">
-                <div className="m-3 flex justify-center items-center w-screen h-[80vh] bg-white border-4 border-black  rounded-lg">
+                <div className="mx-3 mb-10 flex justify-center items-center w-screen h-[90vh] bg-white border-4 border-black  rounded-lg">
                 <form action="" className="h-full w-full flex flex-col p-10 rounded-md">
                     <label >
                         <p className="w-full flex justify-center items-center text-gray-600 font-bold">Title</p>
@@ -64,6 +66,7 @@ function Create_Posts() {
             </div>
         </div>
     </body>
+    <Footer></Footer>
     </div> 
     )
 }

@@ -3,12 +3,14 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { QuerySnapshot, collection, getDoc, getDocs, onSnapshot, query, orderBy } from "firebase/firestore";
 import { db } from "../firebase";
 import Footer from "./Footer"
+import { useNavigate } from "react-router";
 import Post from './Post_preview'
 import { get } from "firebase/database";
-function Create_Post() {
+function View_Posts() {
     const [userUid, setUserUid] = useState(null);
     const [userData, setUserData] = useState(null);
     const [trips, setTrips] = useState([])
+    const navigate = useNavigate();
     const auth = getAuth();
   
     useEffect(() => {
@@ -56,8 +58,9 @@ function Create_Post() {
         <div>
             <div className="bg-[url('/Assets/main-small-bg.png')] flex h-screen items-center justify-center bg-cover 2xl:bg-[url('/Assets/background.png')] md:bg-[url('/Assets/md-screen-bg.png')]">
                 <div className="absolute h-[95vh] top-0 w-screen flex flex-col flex-nowrap overflow-auto">
+                  
                   {trips.map(function(item, id){ 
-                    return <Post key={id} Title={item.Title} Description={item.Description} Icon={item.Icon} Date={item.Date}></Post>})}
+                    return <Post  key={id} Title={item.Title} Description={item.Description} Icon={item.Icon} Date={item.Date}></Post>})}
                 </div>
             </div>
         </div>
@@ -66,4 +69,4 @@ function Create_Post() {
     </div> 
     );
 }
-export default Create_Post
+export default View_Posts
