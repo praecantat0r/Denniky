@@ -1,6 +1,6 @@
 function Post(props) {
     return (
-    <div className="m-3 bg-white rounded-lg border-2 border-black overflow-hidden flex flex-row" style={{minHeight: "130px", maxHeight: "130px"}}> 
+    <div className="m-3 bg-white rounded-lg border-2 border-black flex flex-row" style={{minHeight: "130px", maxHeight: "130px"}}> 
         <div className="h-full w-1/3 bg-gray-200 border-r-2 border-black rounded-lg flex-none">
             <div className="w-full h-full flex justify-center items-center"><p className="text-6xl">{props.Icon}</p></div>
         </div>
