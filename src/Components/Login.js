@@ -30,8 +30,8 @@ function Login() {
                 <div className="">
                     <form action="" className="flex flex-col p-10 rounded-md">
                     <input type="text" placeholder="Email" className="text-gray-600 font-bold border m-1 text-center rounded-md placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" value={email} onChange={e => SetEmail(e.target.value)}/>
-                        <input type="password"  placeholder="Password" className="text-gray-600 font-bold border m-1 text-center rounded-md placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" value={password} onChange={e => SetPassword(e.target.value)}/>
-                        <button type="submit" className="text-gray-600 m-2 bg-pink-violet-200 rounded-md font-bold" onClick={HandleLogin}>Login</button>
+                        <input type="password"  placeholder="Heslo" className="text-gray-600 font-bold border m-1 text-center rounded-md placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" value={password} onChange={e => SetPassword(e.target.value)}/>
+                        <button type="submit" className="text-gray-600 m-2 bg-pink-violet-200 rounded-md font-bold" onClick={HandleLogin}>Prihlasit</button>
                         { warning && <p className="flex justify-center items-center drop-shadow text-red-500 font-bold">{warning}</p>}
                     </form>
                 </div>

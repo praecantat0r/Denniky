@@ -11,6 +11,7 @@ import Register from './Components/Register'
 import Landing from './Components/Landing'
 import View_Posts from './Components/View_Posts'
 import Create_Post from './Components/Create_Posts';
+import Intro from './Components/Intro';
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
         <Route path='/main' element={<Main />}></Route>
         <Route path='/create' element={<Create_Post />}></Route>
         <Route path='/view_posts' element={<View_Posts />}></Route>
+        <Route path='/prekvapenie' element={<Intro />}></Route>
       </Routes>
     </>
   );
